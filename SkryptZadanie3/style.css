@@ -1,0 +1,111 @@
+:root
+{
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: aliceblue
+    ;
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+main 
+{
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+h1, h2, h3 
+{
+    margin: 0 0 1rem;
+}
+form, section
+{
+    padding: 1.25rem;
+    border: 1px solid #d4dee3;
+    border-radius: 0.75rem;
+    background: #fff;
+}
+label 
+{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #7b8e99;
+    border-radius: 0.4rem;
+    font: inherit;
+    color: inherit;
+    resize: vertical;
+}
+
+#err-form {
+    margin: 0.5rem 0 0;
+    color: #a12020;
+}
+
+#err-form:empty {
+    margin: 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background: #126252;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d4b3e;
+}
+
+:focus-visible {
+    outline: 2px solid #126252;
+    outline-offset: 3px;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+dl {
+    margin: 0 0 1.25rem;
+}
+
+dl div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #d4dee3;
+}
+
+dd {
+    margin: 0;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+#wielkie-litery
+{
+    margin: 0;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+    background: #eef3f5;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+

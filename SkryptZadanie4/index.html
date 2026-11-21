@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Analityka wyników studentów</h1>
+        <form id="formularz-studencki" novalidate>
+            <div class="input">
+                <label for="licznik-studentów">
+                    Liczba studentów
+                    <input id="licznik-studentów" type="number" min="1" step="1" placeholder="5" required>
+                </label>
+                <label for="minumum-punkty">
+                    Minimalna liczba punktów
+                    <input id="minumum-punkty" type="number" step="1" placeholder="40" required>
+                </label>
+                <label for ="maksimum-punkty">
+                    Maksymalna liczba punktów
+                    <input id="maksimum-punkty" type="number" step="1" placeholder="100" required>
+                </label>
+            </div>
+            <p id="form-error" role="alert"></p>
+            <button type="submit">Wygeneruj wyniki</button>
+        </form>
+        <section id="wyniki" aria-labelledby="wyniki-nagłówek" hidden>
+            <h2 id="wyniki-nagłówek">Wyniki</h2>
+            <dl class="podsumowanie" aria-live="polite">
+            <div><dt>Średnia</dt><dd id="średnia-punkty"></dd></div>
+            <div><dt>Zaliczyli</dt><dd id="licznik-zaliczen"></dd></div>
+            <div><dt>Nie zaliczyli</dt><dd id="licznik-przegrywów"></dd></div>
+            <div><dt>Najwyższy wynik</dt><dd id="najwyższy"></dd></div>
+            <div><dt>Najniższy wynik</dt><dd id="najniższy"></dd></div>
+            </dl>
+            <div class="tabela">    
+            <table aria-label="Wynikistudentów">
+                    <thead>
+                        <tr>
+                            <th scope="col">Student</th>
+                            <th scope="col">Punkty</th>
+                            <th scope="col">Ocena</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studenci-tabela"></tbody>
+                </table>
+            </div>
+        </section>
+
+            
+
+    </main>
+    
+    
+</body>
+</html>

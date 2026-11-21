@@ -1,0 +1,132 @@
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    color: #19283c;
+    background: #eff3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.35rem;
+}
+
+form, section {
+    padding: clamp(1rem, 4vw, 1.5rem);
+    border: 1px solid #d6dfe9;
+    border-radius: 0.85rem;
+    background: #fff;
+}
+
+.input, .podsumowanie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+    gap: 0.85rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, button {
+    font: inherit;
+    border-radius: 0.45rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #77869a;
+    color: inherit;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.65rem 1rem;
+    border: 0;
+    background: #204a86;
+    color: #fff;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173866;
+}
+
+:focus-visible {
+    outline: 2px solid #204a86;
+    outline-offset: 3px;
+}
+
+#form-error {
+    margin: 0.75rem 0 0;
+    color: #9a2331;
+}
+
+#form-error:empty {
+    margin: 0;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.podsumowanie {
+    margin: 0 0 1.2rem;
+}
+
+.podsumowanie div {
+    padding: 0.75rem;
+    border-radius: 0.45rem;
+    background: #eff3f8;
+}
+
+dd {
+    margin: 0.25rem 0 0;
+    font-weight: 700;
+}
+
+.tabela {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.6rem 0.7rem;
+    border-bottom: 1px solid #d6dfe9;
+    text-align: left;
+}
+
+thead {
+    background: #e4ecf7;
+}
+
+tr.failed {
+    background: #fff0f1;
+    color: #84212e;
+}

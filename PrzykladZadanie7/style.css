@@ -1,0 +1,154 @@
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    color: #19283c;
+    background: #eff3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+form, section {
+    padding: 1.25rem;
+    border: 1px solid #d6dfe9;
+    border-radius: 0.85rem;
+    background: #fff;
+}
+
+form > p:first-child {
+    margin-top: 0;
+}
+
+.macierze {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: 1rem;
+}
+
+.macierz {
+    min-width: 0;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #aebdd0;
+    border-radius: 0.5rem;
+}
+
+legend {
+    padding: 0 0.4rem;
+    font-weight: 700;
+}
+
+.siatka {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+}
+
+input, button {
+    font: inherit;
+    border-radius: 0.4rem;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 0.6rem 0.35rem;
+    border: 1px solid #77869a;
+    text-align: center;
+    color: inherit;
+}
+
+input[aria-invalid="true"] {
+    border-color: #a02032;
+    background: #fff0f1;
+}
+
+#blad-formularza {
+    margin: 0.75rem 0 0;
+    color: #a02032;
+}
+
+#blad-formularza:empty {
+    margin: 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.1rem;
+    border: 0;
+    background: #204a86;
+    color: #fff;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173866;
+}
+
+:focus-visible {
+    outline: 2px solid #204a86;
+    outline-offset: 3px;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+.tabela {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    padding: 0.8rem 0.4rem;
+    border: 1px solid #c9d5e5;
+    background: #eff4fb;
+    text-align: center;
+    overflow-wrap: anywhere;
+    font-weight: 600;
+}
+
+.podsumowanie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 0;
+}
+
+.podsumowanie div {
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    background: #eff3f8;
+}
+
+dd {
+    margin: 0.3rem 0 0;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}

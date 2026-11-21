@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 7</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Mnożenie macierzy 3x3</h1>
+        <form id="formularz-macierzy" novalidate>
+            <p>Wpisz elementy macierzy A i B</p>
+            <div class="macierze">
+                <fieldset class="macierz">
+                    <div class="siatka">
+                        <input id="a-0-0" type="number" step="any" required aria-label="A, wiersz 1, kolumna 1">
+                        <input id="a-0-1" type="number" step="any" required aria-label="A, wiersz 1, kolumna 2">
+                        <input id="a-0-2" type="number" step="any" required aria-label="A, wiersz 1, kolumna 3">
+                        <input id="a-1-0" type="number" step="any" required aria-label="A, wiersz 2, kolumna 1">
+                        <input id="a-1-1" type="number" step="any" required aria-label="A, wiersz 2, kolumna 2">
+                        <input id="a-1-2" type="number" step="any" required aria-label="A, wiersz 2, kolumna 3">
+                        <input id="a-2-0" type="number" step="any" required aria-label="A, wiersz 3, kolumna 1">
+                        <input id="a-2-1" type="number" step="any" required aria-label="A, wiersz 3, kolumna 2">
+                        <input id="a-2-2" type="number" step="any" required aria-label="A, wiersz 3, kolumna 3">
+                    </div>
+                </fieldset>
+                <fieldset class="macierz">
+                    <legend>Macierz B</legend>
+                    <div class="siatka">
+                        <input id="b-0-0" type="number" step="any" required aria-label="B, wiersz 1, kolumna 1">
+                        <input id="b-0-1" type="number" step="any" required aria-label="B, wiersz 1, kolumna 2">
+                        <input id="b-0-2" type="number" step="any" required aria-label="B, wiersz 1, kolumna 3">
+                        <input id="b-1-0" type="number" step="any" required aria-label="B, wiersz 2, kolumna 1">
+                        <input id="b-1-1" type="number" step="any" required aria-label="B, wiersz 2, kolumna 2">
+                        <input id="b-1-2" type="number" step="any" required aria-label="B, wiersz 2, kolumna 3">
+                        <input id="b-2-0" type="number" step="any" required aria-label="B, wiersz 3, kolumna 1">
+                        <input id="b-2-1" type="number" step="any" required aria-label="B, wiersz 3, kolumna 2">
+                        <input id="b-2-2" type="number" step="any" required aria-label="B, wiersz 3, kolumna 3">
+                    </div>
+                </fieldset>
+                <p id="blad-formularza" role="alert"></p>
+                <button type="submit">Oblicz A × B</button>
+            </div>
+                  <section id="wyniki" aria-labelledby="naglowek-wynikow" aria-live="polite" hidden>
+            <h2 id="naglowek-wynikow">Macierz wynikowa A × B</h2>
+            <div class="tabela">
+                <table aria-label="Iloczyn macierzy A i B">
+                    <tbody id="macierz-wynikowa"></tbody>
+                </table>
+            </div>
+            <dl class="podsumowanie">
+                <div><dt>Suma elementów</dt><dd id="suma-elementow"></dd></div>
+                <div><dt>Największy element</dt><dd id="najwiekszy-element"></dd></div>
+                <div><dt>Najmniejszy element</dt><dd id="najmniejszy-element"></dd></div>
+            </dl>
+        </section>
+        </form>
+    </main>
+</body>
+</html>

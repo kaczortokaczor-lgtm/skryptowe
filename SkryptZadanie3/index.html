@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Analiza tekstu</h1>
+        <pre><h2>Sprawdzenie palidromiczności</h2></pre>
+        <form id="formularz">
+            <label for="inp-form">Wpisz tekst:</label>
+            <textarea id="inp-form" rows="7" aria-describedby="err-form"></textarea>
+            <p id="err-form" role="alert"></p>
+            <button type="submit">Analizuj</button>
+        </form>
+
+        <div aria-live="polite">
+            <section id="wynik" aria-labelledby="results-heading" hidden>
+                <h2 id="results-heading">Wyniki analizy</h2>
+                <dl>
+                    <div><dt>Liczba znaków</dt><dd id="licznik-z"></dd></div>
+                    <div><dt>Liczba znaków bez spacji</dt><dd id="licznik-zbs"></dd></div>
+                    <div><dt>Liczba słów</dt><dd id="slow-l"></dd></div>
+                    <div><dt>Liczba samogłosek</dt><dd id="licznik-s"></dd></div>
+                    <div><dt>Liczba cyfr</dt><dd id="licznik-l"></dd></div>
+                    <div><dt>Najdłuższe słowo</dt><dd id="najdluzsze"></dd></div>
+                    <div><dt>Palindrom</dt><dd id="palindrom"></dd></div>
+                </dl>
+
+                <h3>Tekst wielkimi literami</h3>
+                <p id="wielkie-litery"></p>
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
