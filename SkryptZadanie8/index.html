@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasa Car i formularz HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Informacje o samochodzie</h1>
+
+        <form id="formularz-samochodu" novalidate>
+            <label for="marka">Marka samochodu</label>
+            <input id="marka" type="text" placeholder="Toyota" required>
+
+            <label for="model">Model samochodu</label>
+            <input id="model" type="text" placeholder="Corolla" required>
+
+            <label for="rok-produkcji">Rok produkcji</label>
+            <input id="rok-produkcji" type="number" min="1" step="1" placeholder="2020" required>
+
+            <p id="blad-formularza" role="alert"></p>
+            <button type="submit">Wyświetl informacje</button>
+        </form>
+
+        <p id="wyniki" aria-live="polite" hidden></p>
+    </main>
+</body>
+</html>
