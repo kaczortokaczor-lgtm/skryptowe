@@ -50,7 +50,6 @@ function znajdzSkrajneWyniki(studenci)
     let najslabszyStudent = studenci[0];
 
     for (const student of studenci) {
-        // Przy remisie wskazujemy pierwszego studenta z danym wynikiem.
         if (student.punkty > najlepszyStudent.punkty) najlepszyStudent = student;
         if (student.punkty < najslabszyStudent.punkty) najslabszyStudent = student;
     }

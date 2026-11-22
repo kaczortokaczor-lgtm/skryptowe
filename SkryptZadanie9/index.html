@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprawdzanie numeru NIP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Sprawdzanie numeru NIP</h1>
+
+        <form id="formularz-nip" novalidate>
+            <label for="numer-nip">Numer NIP</label>
+            <input id="numer-nip" type="text" inputmode="numeric" autocomplete="off"
+                aria-describedby="wskazowka komunikat-formalny" required>
+            <p id="wskazowka">Wpisz dokładnie 10 cyfr, bez spacji i myślników.</p>
+            <button id="przycisk-sprawdz" type="submit">Sprawdź NIP</button>
+        </form>
+
+        <p id="komunikat-formalny" class="komunikat" aria-live="polite"></p>
+        <p id="komunikat-api" class="komunikat" role="status"></p>
+
+        <section id="wyniki" aria-labelledby="naglowek-wynikow" hidden>
+            <h2 id="naglowek-wynikow">Dane z wykazu podatników VAT</h2>
+            <dl>
+                <div><dt>Nazwa firmy</dt><dd id="nazwa-firmy"></dd></div>
+                <div><dt>NIP</dt><dd id="nip-firmy"></dd></div>
+                <div><dt>Status VAT</dt><dd id="status-vat"></dd></div>
+                <div><dt>Stan na dzień</dt><dd id="data-sprawdzenia"></dd></div>
+            </dl>
+        </section>
+
+        <p class="uwaga">Poprawna cyfra kontrolna nie potwierdza nadania NIP.
+            Brak wpisu w wykazie VAT nie przesądza o nieistnieniu firmy.</p>
+    </main>
+</body>
+</html>

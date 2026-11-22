@@ -1,0 +1,155 @@
+:root
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #19283c;
+    background: #f0f4f8;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+
+main
+{
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+h1
+{
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+}
+
+h2
+{
+    margin: 0 0 1rem;
+    font-size: 1.3rem;
+}
+
+form, section
+{
+    padding: 1.25rem;
+    border: 1px solid #d6dfe9;
+    border-radius: 0.75rem;
+    background: #fff;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+input
+{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #77869a;
+    border-radius: 0.4rem;
+    color: inherit;
+    font: inherit;
+}
+
+input[aria-invalid="true"]
+{
+    border-color: #a02032;
+}
+
+#wskazowka, .uwaga
+{
+    color: #526174;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#wskazowka
+{
+    margin: 0.5rem 0 1rem;
+}
+
+button
+{
+    padding: 0.7rem 1rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background: #204a86;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background: #173866;
+}
+
+button:disabled
+{
+    opacity: 0.65;
+    cursor: wait;
+}
+
+:focus-visible
+{
+    outline: 2px solid #204a86;
+    outline-offset: 3px;
+}
+
+.komunikat
+{
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.komunikat:empty
+{
+    margin: 0;
+}
+
+.poprawny
+{
+    color: #176343;
+}
+
+.blad
+{
+    color: #a02032;
+}
+
+section
+{
+    margin-top: 1rem;
+}
+
+dl
+{
+    margin: 0;
+}
+
+dl div
+{
+    margin-top: 0.8rem;
+}
+
+dd
+{
+    margin: 0.25rem 0 0;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.uwaga
+{
+    margin: 1.25rem 0 0;
+}

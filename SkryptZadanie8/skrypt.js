@@ -7,7 +7,6 @@ const wyniki = document.querySelector('#wyniki');
 
 class Car
 {
-    // Konstruktor zapisuje przekazane dane we właściwościach nowego obiektu.
     constructor(brand, model, year)
     {
         this.brand = brand;
@@ -17,12 +16,9 @@ class Car
 
     displayInfo()
     {
-        // this oznacza obiekt samochodu, na którym wywołano metodę.
         const opis = document.createElement('span');
         opis.textContent = `Car: ${this.brand} ${this.model}, Year: ${this.year}`;
 
-        // textContent koduje znaki HTML z formularza. Następnie innerHTML
-        // umieszcza na stronie bezpiecznie przygotowany tekst.
         wyniki.innerHTML = opis.innerHTML;
         wyniki.hidden = false;
     }
@@ -45,7 +41,6 @@ function sprawdzDane(marka, model, rok)
 
 formularz.addEventListener('submit', (e) =>
 {
-    // Zatrzymuje domyślne wysłanie formularza i przeładowanie strony.
     e.preventDefault();
     wyniki.hidden = true;
 

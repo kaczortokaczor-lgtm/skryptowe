@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sklep – koszyk zakupów</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Nawigacja sklepu">
+            <a class="nazwa-sklepu" href="#produkty">Sklep</a>
+            <a href="#koszyk">Twój koszyk (<span id="liczba-produktow">0</span>)</a>
+        </nav>
+    </header>
+    <main>
+        <section id="produkty">
+            <h1>Produkty</h1>
+            <p id="komunikat" role="status"></p>
+            <button type="button" id="ponow-pobieranie" hidden>Spróbuj ponownie</button>
+            <div id="lista-produktow"></div>
+        </section>
+
+        <section id="koszyk">
+            <h2>Twój koszyk</h2>
+            <table aria-label="Zawartość koszyka">
+                <thead>
+                    <tr><th scope="col">Produkt</th><th scope="col">Cena</th></tr>
+                </thead>
+                <tbody id="pozycje-koszyka"></tbody>
+            </table>
+            <p class="podsumowanie" aria-live="polite">
+                Łączna wartość: <strong id="wartosc-koszyka">0,00 USD</strong>
+            </p>
+            <button type="button" id="wyczysc-koszyk" disabled>Wyczyść koszyk</button>
+        </section>
+    </main>
+</body>
+</html>
