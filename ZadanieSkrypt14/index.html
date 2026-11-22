@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Testowanie PHP</title>
+</head>
+<body>
+    <h2>Odpowiedź</h2>
+    <pre id="response"></pre>
+
+    <script>
+        const endpoint = 'api.php';
+        const wynik = document.getElementById('response');
+        fetch(endpoint)
+            .then(response => response.json())
+            .then(odpowiedz => 
+                {
+                    const dane = odpowiedz.data;
+                    wynik.textContent =
+                    `Imię: ${dane.imie}\n` +
+                    `Nazwisko: ${dane.nazwisko}\n` +
+                    `Adres:\n` +
+                    `  Ulica: ${dane.adres.ulica}\n` +
+                    `  Miasto: ${dane.adres.miasto}\n` +
+                    `  Kod pocztowy: ${dane.adres.kodPocztowy}`;
+                })
+                    .catch(error => {
+                        wynik.textContent = 'Nie udało się pobrać danych.';
+                        console.error(error);
+                });
+    </script>
+</body>
+</html>

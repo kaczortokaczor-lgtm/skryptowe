@@ -1,0 +1,10 @@
+{
+    "imie": "Mariusz",
+    "nazwisko": "Pudzianowski",
+    "adres": 
+    {
+        "ulica": "ul. Sportowa 1",
+        "miasto": "Warszawa",
+        "kodPocztowy": "00-001"
+    }
+}

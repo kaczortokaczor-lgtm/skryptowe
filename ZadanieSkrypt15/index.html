@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Skrypt 15 – klienci</title>
+</head>
+<body>
+    <h1>Klienci</h1>
+
+    <p>
+        <label for="idKlienta">ID klienta do edycji lub usunięcia</label>
+        <input type="number" id="idKlienta" min="1">
+    </p>
+
+    <p>
+        <label for="imie">Imię</label>
+        <input type="text" id="imie" maxlength="50">
+    </p>
+
+    <p>
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" id="nazwisko" maxlength="100">
+    </p>
+
+    <button type="button" id="dodaj">Dodaj osobę</button>
+    <button type="button" id="zmien">Zmień dane</button>
+    <button type="button" id="usun">Usuń osobę</button>
+
+    <p id="komunikat" aria-live="polite"></p>
+
+    <h2>Lista autorów</h2>
+    <ol id="lista"></ol>
+
+    <script src="script.js"></script>
+</body>
+</html>
